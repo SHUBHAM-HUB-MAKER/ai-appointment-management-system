@@ -187,8 +187,8 @@ directly through WhatsApp.
 
 AI Automation Builder | n8n Developer | AI Agents | Workflow Automation
 
-GitHub: https://github.com/SHUBHAM-HUB-MAKER
-
 ---
 
-⭐ If you found this project interesting, consider giving it a star.
+> Open to opportunities in AI Automation, n8n Development, AI Agents, and Workflow Automation.
+>
+> Happy to discuss the architecture, automation logic, and implementation details behind this project.
