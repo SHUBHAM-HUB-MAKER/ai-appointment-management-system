@@ -24,15 +24,15 @@ The system automates the complete appointment lifecycle, including appointment b
 
 ---
 
-## Workflow Architecture
+# Workflow Architecture
 
-The workflow is built using n8n and integrates AI Agents, WhatsApp Cloud API, Google Calendar, and Google Sheets to automate the complete appointment lifecycle.
+The workflow integrates AI Agents, WhatsApp Cloud API, Google Calendar, and Google Sheets to automate the entire appointment management process.
 
 ![Workflow Architecture](n8n-workflow111.png)
 
 ---
 
-## Patient Conversation & Data Collection
+# Step 1 – Patient Conversation & Data Collection
 
 The AI Agent interacts with patients through WhatsApp and collects:
 
@@ -45,29 +45,29 @@ The AI Agent interacts with patients through WhatsApp and collects:
 
 The AI Agent can also answer clinic-related questions before proceeding with appointment booking.
 
-![WhatsApp Conversation](Whats app - Conversation of data collecting and q&a.png)
+![WhatsApp Conversation](Whats%20app%20-%20Conversation%20of%20data%20collecting%20and%20q%26a.png)
 
 ---
 
-## Real-Time Availability Validation
+# Step 2 – Real-Time Availability Validation
 
-Once the patient provides a preferred appointment slot, the workflow checks Google Calendar in real time.
+When a patient requests an appointment slot, the workflow checks Google Calendar in real time.
 
 The system:
 
-- Detects booking conflicts
+- Detects scheduling conflicts
 - Prevents double booking
 - Validates appointment availability
 
-If the requested slot is unavailable, alternative available slots are automatically suggested.
+If the requested slot is unavailable, nearby available slots are automatically suggested.
 
-![Alternative Slot Recommendation](Whats app - after updating &proving alternative slot ....png)
+![Alternative Slot Recommendation](Whats-app-after-updating-%26proving-alterntative-slot-to-prevent-double-booking.png)
 
 ---
 
-## Appointment Confirmation
+# Step 3 – Appointment Confirmation
 
-When an available slot is selected:
+After an available slot is selected:
 
 - Appointment is confirmed automatically
 - Google Calendar event is created
@@ -75,21 +75,21 @@ When an available slot is selected:
 - Appointment details are saved in Google Sheets
 - Confirmation message is sent through WhatsApp
 
-### Google Calendar Event
+## Google Calendar Event
 
 ![Calendar Confirmation](Calender-After-Confirmation.png)
 
-### Google Sheets Record
+## Google Sheets Record
 
 ![Google Sheet Confirmation](Google-Sheet-After-confirmation.png)
 
 ---
 
-## Appointment Updates & Rescheduling
+# Step 4 – Appointment Updates & Rescheduling
 
 The system supports appointment modifications without manual intervention.
 
-### Supported Updates
+Supported updates:
 
 - Treatment updates
 - Appointment date updates
@@ -103,75 +103,75 @@ The workflow automatically:
 - Maintains Event ID tracking
 - Sends updated confirmation messages
 
-### Calendar After Treatment Update
+## Calendar After Treatment Update
 
 ![Calendar Treatment Update](Calender-After-treatments-update.png)
 
-### Calendar After Date & Time Update
+## Calendar After Date & Time Update
 
 ![Calendar Date Time Update](Calender-After-updated-confirmation-of-date-and-time.png)
 
-### Google Sheet After Treatment Update
+## Google Sheet After Treatment Update
 
 ![Google Sheet Treatment Update](Google-Sheet-After-treatment-Update.png)
 
-### Google Sheet After Date & Time Update
+## Google Sheet After Date & Time Update
 
 ![Google Sheet Date Time Update](Sheets-after-updated-confirmation-of-new-date-and-time.png)
 
 ---
 
-## Alternative Slot Recommendation Workflow
+# Step 5 – Unavailable Slot Handling
 
 If a requested appointment slot is unavailable:
 
 - Existing calendar events are checked
 - Nearby available slots are identified
-- Alternative time slots are recommended automatically
+- Alternative time slots are suggested automatically
 - The patient can choose a preferred alternative slot
 
-### Unavailable Slot Scenario
+## Calendar Conflict Example
 
 ![Unavailable Slot](Calender-Updated-requested-time-slot-not-available.png)
 
 ---
 
-## Appointment Cancellation
+# Step 6 – Appointment Cancellation
 
 The workflow supports complete appointment cancellation.
 
-### Cancellation Process
+Cancellation process:
 
-- Google Calendar event is deleted automatically
+- Calendar event is deleted automatically
 - Appointment status is updated
 - Google Sheets record is synchronized
 - Cancellation confirmation is sent through WhatsApp
 
-### WhatsApp Cancellation Confirmation
+## WhatsApp Cancellation Confirmation
 
-![Appointment Cancellation](Whats-app-Appointment-cancellation.png)
+![Appointment Cancellation](Whats-app%20-Appointmentcancellation.png)
 
-### Google Sheets After Cancellation
+## Google Sheets After Cancellation
 
-![Google Sheets Cancellation](Google-Sheets-After-cancellation.png)
+![Google Sheets Cancellation](Google-Sheets%20-After-cancellation.png)
 
 ---
 
-## Technology Stack
+# Technology Stack
 
-### Automation & AI
+## Automation & AI
 
 - n8n
 - AI Agents
 - Grok
 - Gemini
 
-### Programming
+## Programming
 
 - JavaScript
 - JSON
 
-### APIs & Integrations
+## APIs & Integrations
 
 - WhatsApp Cloud API
 - Google Calendar API
@@ -181,7 +181,7 @@ The workflow supports complete appointment cancellation.
 
 ---
 
-## Project Highlights
+# Project Highlights
 
 - Built a complete appointment lifecycle automation system.
 - Implemented real-time Google Calendar availability validation.
@@ -190,11 +190,11 @@ The workflow supports complete appointment cancellation.
 - Integrated WhatsApp, Google Calendar, and Google Sheets into a unified workflow.
 - Implemented duplicate booking prevention mechanisms.
 - Maintained synchronization across platforms using Event ID tracking.
-- Delivered a fully autonomous scheduling solution requiring minimal manual intervention.
+- Delivered a fully autonomous scheduling solution with minimal manual intervention.
 
 ---
 
-## Business Impact
+# Business Impact
 
 This automation system:
 
@@ -207,9 +207,9 @@ This automation system:
 
 ---
 
-## Author
+# Author
 
-### Shubham Gupta
+## Shubham Gupta
 
 AI Automation Builder | n8n Developer | AI Agents | Workflow Automation
 
@@ -217,4 +217,4 @@ GitHub: https://github.com/SHUBHAM-HUB-MAKER
 
 ---
 
-> This project was built to demonstrate AI-powered workflow automation, conversational AI, business process automation, API integrations, and end-to-end appointment lifecycle management using modern automation technologies.
+> This project demonstrates AI-powered workflow automation, conversational AI, business process automation, API integrations, and end-to-end appointment lifecycle management using modern automation technologies.
