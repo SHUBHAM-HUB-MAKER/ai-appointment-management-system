@@ -158,7 +158,7 @@ Patients can cancel appointments directly through WhatsApp. The workflow updates
 
 # 📄 PDF Confirmation Generation
 
-![Appointment Confirmation Slip](confirmation.png)
+![Appointment Confirmation Slip](Confirmation.png)
 
 The system automatically generates and sends:
 
